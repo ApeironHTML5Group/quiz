@@ -3,7 +3,6 @@
     NodeList.prototype.forEach = Array.prototype.forEach;
     //endregion
 
-
     function createCORSRequest(method, url) {
         method = method || 'GET';
         var xhr = new XMLHttpRequest();
@@ -19,6 +18,13 @@
     }
 
     function loadLink(link) {
+        //remove active from nav a tag
+        document.querySelectorAll('nav a').forEach(function (item) {
+            if (item.href != link) {
+                item.classList.remove('active');
+            }
+        });
+
         var xhr = createCORSRequest('GET', link);
         xhr.onload = function () {
             document.querySelector('main').innerHTML = xhr.responseText;
@@ -37,20 +43,10 @@
         xhr.send();
     }
 
-    function removeActive(link) {
-        var currnt_link = link;
-        document.querySelectorAll('nav a').forEach(function (item) {
-            if (item.href != currnt_link) {
-                item.classList.remove('active');
-            }
-        });
-    }
-
     document.querySelectorAll('nav a').forEach(function (item) {
         item.addEventListener("click", function (event) {
             event.preventDefault();
             item.classList.add('active');
-            removeActive(item.href);
             loadLink(item.href);
         }, false);
     });
