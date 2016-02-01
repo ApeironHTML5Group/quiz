@@ -22,6 +22,14 @@
         var xhr = createCORSRequest('GET', link);
         xhr.onload = function () {
             document.querySelector('main').innerHTML = xhr.responseText;
+            var content = document.createElement('div');
+            content.innerHTML = xhr.responseText;
+            content.querySelectorAll('script').forEach(function (item) {
+                var script = document.createElement('script');
+                script.src = item.src;
+                console.log(script);
+                document.querySelector('main').appendChild(script);
+            });
         };
         xhr.onerror = function () {
             alert(xhr.status + ': ' + xhr.statusText);
