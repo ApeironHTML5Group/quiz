@@ -1,13 +1,11 @@
 (function(){
 
-	
-	document.addEventListener('click', function(e){
+	function checkAnswer(){
+		var questionCount = document.getElementsByTagName('section');
 
-		if(e.target && e.target.nodeName == "BUTTON"){
-			var btnId = e.target.id;
-			var btnNumber = btnId.replace( /^\D+/g, '');
-			
-			var pitanje = document.getElementById('q'+btnNumber);
+		for (var j = 1; j<=questionCount.length; j++){
+
+			var pitanje = document.getElementById('q'+j);
 			var odgovori = pitanje.getElementsByTagName('li');
 			var idTacnogOdgovora = pitanje.getAttribute('data-correct-answer-id'); 
 			
@@ -24,8 +22,12 @@
 					tacan = false;
 					odgovori[i].style.color = "red";											
 				}			
-			}	
+			}
 		}
-	});
+
+	}
+
+	var btn = document.getElementById('show-answers');
+	btn.addEventListener('click', checkAnswer);
 
 }())
