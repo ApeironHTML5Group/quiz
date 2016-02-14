@@ -1,1 +1,70 @@
-﻿
+﻿#main {
+    min-height: 700px;
+    margin: 0px;
+    padding: 0px;
+    display: -webkit-flex;
+    display:         flex;
+    -webkit-flex-flow: row;
+            flex-flow: row;
+}
+ 
+#main > main {
+    padding: 5px;
+    -webkit-flex: 3 1 60%;
+            flex: 3 1 60%;
+    -webkit-order: 2;
+            order: 2;
+}
+
+#main > nav {
+    max-width: 170px;
+    padding: 5px;
+    -webkit-flex: 1 6 20%;
+            flex: 1 6 20%;
+    -webkit-order: 1;
+            order: 1;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ 
+header, footer {
+    display: block;
+    padding: 5px;
+    min-height: 100px;
+}
+ 
+@media all and (max-width: 640px) {
+  
+    #main, #page {
+        -webkit-flex-flow: column;
+                flex-direction: column;
+    }
+
+  
+    header, footer {
+        min-height: 52px;
+        max-height: 52px;
+    }
+
+    #main > main {
+        order: 1;
+    }
+
+    #main > nav {
+        min-height: 50px;
+        max-width: none;
+        order: 2;
+    }
+
+    nav li {
+        display: inline;
+        padding-right: 10px;
+        overflow: hidden; 
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
