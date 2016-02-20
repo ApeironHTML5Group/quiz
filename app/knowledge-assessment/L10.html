@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Kviz</title>
+</head>
+<body>
+    <section id="q1" data-correct-answer-id="q1_a2 q1_a3">
+        <h1>1. Which gesture is the equivalent of a mouse right-click? (Choose all that apply.) </h1>
+		<ol>		
+			<li id="q1_a1"><input type="checkbox" /> double tap </li>
+			<li id="q1_a2"><input type="checkbox" /> press and tap </li>
+			<li id="q1_a3"><input type="checkbox" /> press and hold </li>
+			<li id="q1_a4"><input type="checkbox" /> tap </li>
+		</ol>
+    </section>	
+
+    <section id="q2" data-correct-answer-id="q2_a3">
+        <h1>2. For which gesture do you press a finger on the screen, move it in any direction, and then lift
+			the finger to scroll?</h1>
+		<ol>		
+			<li id="q2_a1"><input type="checkbox" /> rotate </li>
+			<li id="q2_a2"><input type="checkbox" /> panning with inertia </li>
+			<li id="q2_a3"><input type="checkbox" /> flick </li>
+			<li id="q2_a4"><input type="checkbox" /> zoom </li>
+		</ol>
+    </section>	
+    
+    <section id="q3" data-correct-answer-id="q3_a1">
+        <h1>3. Which gesture is the equivalent of scrolling with a mouse?</h1>
+		<ol>		
+			<li id="q3_a1"><input type="checkbox" /> panning with inertia </li>
+			<li id="q3_a2"><input type="checkbox" /> press and tap </li>
+			<li id="q3_a3"><input type="checkbox" /> press and hold </li>
+			<li id="q3_a4"><input type="checkbox" /> selection/drag </li>
+		</ol>
+    </section>	
+    
+      <section id="q4" data-correct-answer-id="q4_a3">
+        <h1>4. On a touch screen, lifting your finger from the screen triggers which JavaScript event? </h1>
+		<ol>		
+			<li id="q4_a1"><input type="checkbox" /><code>touchcancel</code></li>
+			<li id="q4_a2"><input type="checkbox" /><code>touchmove</code></li>
+			<li id="q4_a3"><input type="checkbox" /><code>touchend</code></li>
+			<li id="q4_a4"><input type="checkbox" /><code>touchstart</code></li>
+		</ol>
+    </section>	
+    
+     <section id="q5" data-correct-answer-id="q5_a1">
+        <h1>5. On a touch screen device, which event is triggered when the device launches another
+			application?</h1>
+		<ol>		
+			<li id="q5_a1"><input type="checkbox" /><code>touchcancel</code></li>
+			<li id="q5_a2"><input type="checkbox" /><code>touchmove</code></li>
+			<li id="q5_a3"><input type="checkbox" /><code>touchend</code></li>
+			<li id="q5_a4"><input type="checkbox" /><code>touchstart</code></li>	
+		</ol>
+    </section>	
+    
+	<section id="q6" data-correct-answer-id="q6_a2">
+        <h1>6. In the following code, what does the <code>evt.preventDefault()</code> method do?<br>
+			<code>function handleStart(evt) {<br>
+			evt.preventDefault();<br>
+			var el = document.getElementsByTagName("cdraw")[0];<br>
+			var context = el.getContext("2d");<br>
+			var touches = evt.changedTouches;<br>
+			for (var i=0; i &lt; touches.length; i++){ <br>
+			ongoingTouches.push(touches[i]);<br>
+			var color = colorForTouch(touches[i]);<br>
+			context.fillStyle = color;<br>
+			context.fillRect(touches[i].pageX,<br>
+			touches[i].pageY, 4, 4);<br>
+			}}</code></h1>
+		<ol>		
+			<li id="q6_a1"><input type="checkbox" /> gathers the list of touch points that have changed </li>
+			<li id="q6_a2"><input type="checkbox" /> stops the browser from continuing to process the touch event (preventing scrolling) </li>
+			<li id="q6_a3"><input type="checkbox" /> draws the canvas object </li>
+			<li id="q6_a4"><input type="checkbox" /> none of the above </li>
+		</ol>
+    </section>	
+    
+    <section id="q7" data-correct-answer-id="q7_a1">
+        <h1>7. On a touch screen, which event do you trigger when you place two fingers on the screen?</h1>
+		<ol>		
+			<li id="q7_a1"><input type="checkbox" /><code>gesturestart</code></li>
+			<li id="q7_a2"><input type="checkbox" /><code>gesturechange</code></li>
+			<li id="q7_a3"><input type="checkbox" /><code>gestureend</code></li>
+			<li id="q7_a4"><input type="checkbox" /><code>touchstart</code></li>
+		</ol>
+    </section>	
+    
+    <section id="q8" data-correct-answer-id="q8_a2">
+        <h1>8. The action an application takes in response to a gesture is called a_______?</h1>
+		<ol>		
+			<li id="q8_a1"><input type="checkbox" /> touchlist </li>
+			<li id="q8_a2"><input type="checkbox" /> touch event </li>
+			<li id="q8_a3"><input type="checkbox" /> tap </li>
+			<li id="q8_a4"><input type="checkbox" /> double tap </li>
+		</ol>
+    </section>	
+    
+	<section id="q9" data-correct-answer-id="q9_a1">
+        <h1>9. Which JavaScript seldom-used touch event can reset variables used during other touch events,
+			and helps the browser keep track of active touch objects in the touchlist?</h1>
+		<ol>		
+			<li id="q9_a1"><input type="checkbox" /><code>touchcancel</code></li>
+			<li id="q9_a2"><input type="checkbox" /><code>touchmove</code></li>
+			<li id="q9_a3"><input type="checkbox" /><code>touchend</code></li>
+			<li id="q9_a4"><input type="checkbox" /><code>touchstart</code></li>
+		</ol>
+    </section>	
+    
+	<section id="q10" data-correct-answer-id="q10_a1 q10_a3">
+        <h1>10. Which of the following is an example of civic data? (Choose all that apply.)</h1>
+		<ol>		
+			<li id="q10_a1"><input type="checkbox" /> a Bing map </li>
+			<li id="q10_a2"><input type="checkbox" /> 37.775 -122.422 </li>
+			<li id="q10_a3"><input type="checkbox" /> 705 Eganhill Road </li>
+			<li id="q10_a4"><input type="checkbox" /> 10 07 05 12 </li>
+		</ol>
+    </section>	
+    
+
+    <section id="q11" data-correct-answer-id="q11_a1 q11_a2 q11_a3">
+        <h1>11. What type of data is returned using the Geolocation API? (Choose all that apply.)
+			<code>navigator.geolocation.getCurrentPosition(showmap);</code></h1>
+		<ol>		
+			<li id="q11_a1"><input type="checkbox" /> latitude </li>
+			<li id="q11_a2"><input type="checkbox" /> longitude </li>
+			<li id="q11_a3"><input type="checkbox" /> geodetic </li>
+			<li id="q11_a4"><input type="checkbox" /> civic </li>
+		</ol>
+    </section>	
+    
+
+     <section id="q12" data-correct-answer-id="q12_a2">
+        <h1>12. Which of the following functions or methods are suitable for Web Workers scripts? (Choose
+			all that apply.)</h1>
+		<ol>		
+			<li id="q12_a1"><input type="checkbox" /><code>setTimeout</code></li>
+			<li id="q12_a2"><input type="checkbox" /><code>context.fillStyle</code></li>
+			<li id="q12_a3"><input type="checkbox" /><code>setInterval</code></li>
+			<li id="q12_a4"><input type="checkbox" /><code>XMLHttpRequest</code></li>
+		</ol>
+    </section>	
+    
+
+    <section id="q13" data-correct-answer-id="q13_a1">
+        <h1>13. What does the following code snippet result in?
+			<code>var worker = new Worker("doWork.js");<br>
+			worker.postMessage("start");</code></h1>
+		<ol>		
+			<li id="q13_a1"><input type="checkbox" /> creates a new Web Worker thread and starts it</li>
+			<li id="q13_a2"><input type="checkbox" /> parses Web Worker data </li>
+			<li id="q13_a3"><input type="checkbox" /> passes JSON data </li>
+			<li id="q13_a4"><input type="checkbox" /> closes a Web Worker thread </li>
+		</ol>
+    </section>	
+    
+
+    <section id="q14" data-correct-answer-id="q14_a2">
+        <h1>14. You are creating a script that works with WebSocket connections. What does the following
+			code accomplish?<br>
+			<code>var file =<br>
+			document.querySelector('input[type="file"]').files[0];<br>
+			socket.send(file);</code></h1>
+		<ol>		
+			<li id="q14_a1"><input type="checkbox" /> displays a message </li>
+			<li id="q14_a2"><input type="checkbox" /> sends a file as a Blob </li>
+			<li id="q14_a3"><input type="checkbox" /> sends a text-based message </li>
+			<li id="q14_a4"><input type="checkbox" /> closes a file </li>
+		</ol>
+    </section>	
+    
+
+    <section id="q15" data-correct-answer-id="q15_a4">
+        <h1>15. You are creating an application that will access raw binary data from local storage. Which
+			File API interface is best to use?</h1>
+		<ol>		
+			<li id="q15_a1"><input type="checkbox" /> File </li>
+			<li id="q15_a2"><input type="checkbox" /> FileList </li>
+			<li id="q15_a3"><input type="checkbox" /> FileReader </li>
+			<li id="q15_a4"><input type="checkbox" /> Blob </li>
+		</ol>
+    </section>	
+    
+
+     <section id="q16" data-correct-answer-id="q16_a1">
+        <h1>16. You are creating an application that must access a file in local storage and read in the file
+			name as a URL. Which File API interface is best to use?</h1>
+		<ol>		
+			<li id="q16_a1"><input type="checkbox" /> File </li>
+			<li id="q16_a2"><input type="checkbox" /> FileList </li>
+			<li id="q16_a3"><input type="checkbox" /> FileReader </li>
+			<li id="q16_a4"><input type="checkbox" /> Blob </li>
+		</ol>
+    </section>	
+    
+
+     <section id="q17" data-correct-answer-id="q17_a2">
+        <h1>17. You are developing an online three-question quiz Web application to be displayed with
+			articles on your Web site. The answers provided by users should not be saved after they leave 
+			your site. Which code is best to use for removing user data?</h1>
+		<ol>		
+			<li id="q17_a1"><input type="checkbox" /><code>sessionStorage.getItem('key')</code></li>
+			<li id="q17_a2"><input type="checkbox" /><code>sessionStorage.clear()</code></li>
+			<li id="q17_a3"><input type="checkbox" /><code>localStorage.getItem('key')</code></li>
+			<li id="q17_a4"><input type="checkbox" /><code>localStorage.removeItem()</code></li>
+		</ol>
+    </section>	
+    
+
+    <section id="q18" data-correct-answer-id="q18_a3">
+        <h1>18. Which HTML5 API is most often associated with a GPS chip?</h1>
+		<ol>		
+			<li id="q18_a1"><input type="checkbox" /><code>Web Workers</code></li>
+			<li id="q18_a2"><input type="checkbox" /><code>WebSockets</code></li>
+			<li id="q18_a3"><input type="checkbox" /><code>Geolocation</code></li>
+			<li id="q18_a4"><input type="checkbox" /><code>File</code></li>
+		</ol>
+    </section>	
+    
+
+    <section id="q19" data-correct-answer-id="q19_a1">
+        <h1>19. Which of the following is a suitable application for a device accelerometer? </h1>
+		<ol>		
+			<li id="q19_a1"><input type="checkbox" /> pedometer </li>
+			<li id="q19_a2"><input type="checkbox" /> contact list </li>
+			<li id="q19_a3"><input type="checkbox" /> messaging </li>
+			<li id="q19_a4"><input type="checkbox" /> note-taking </li>
+		</ol>
+    </section>	
+    
+
+     <section id="q20" data-correct-answer-id="q20_a2">
+        <h1>20. Which of the following methods can you use to access a device’s local camera and
+			microphone stream?</h1>
+		<ol>		
+			<li id="q20_a1"><input type="checkbox" /><code>getCurrentPosition()</code></li>
+			<li id="q20_a2"><input type="checkbox" /><code>getUserMedia()</code></li>
+			<li id="q20_a3"><input type="checkbox" /><code>addEventListener()</code></li>
+			<li id="q20_a4"><input type="checkbox" /><code>getContext()</code></li>
+		</ol>
+    </section>	
+
+    <button type="button" id="show-answers">Prikazi odgovore</button>
+    
+	<script src="../js/app.js"></script>
+	
+</body>
+</html>
